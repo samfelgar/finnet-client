@@ -1,0 +1,31 @@
+{
+    "name": "samfelgar/finnet-client",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Samfelgar\\FinnetClient\\": "src/",
+            "Samfelgar\\FinnetClient\\Tests\\": "tests/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Samuel Felipe",
+            "email": "samfelgar@gmail.com"
+        }
+    ],
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "require": {
+        "php": "^7.4|^8.0",
+        "ext-json": "*",
+        "guzzlehttp/guzzle": "^7.4",
+        "spatie/data-transfer-object": "^2.8"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.5"
+    }
+}
