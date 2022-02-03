@@ -10,4 +10,9 @@ class PaymentException extends Exception
     {
         return new PaymentException('Payment not found');
     }
+
+    public static function invalidPaymentsLength(): PaymentException
+    {
+        return new PaymentException('The payments length does not meet minimum length of 1');
+    }
 }
