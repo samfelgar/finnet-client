@@ -46,6 +46,23 @@ class CreateTest extends TestCase
         $createService->execute($this->paymentsWithInvalidLength());
     }
 
+    public function testItThrowsAnPaymentExceptionIfAClientErrorOccurs(): void
+    {
+        $handler = new MockHandler([
+            new Response(400),
+        ]);
+
+        $handlerStack = HandlerStack::create($handler);
+
+        $client = new Client(['handler' => $handlerStack]);
+
+        $createService = new Create($client);
+
+        $this->expectException(PaymentException::class);
+
+        $createService->execute($this->payments());
+    }
+
     private function mockSuccessfulResponse(): ResponseInterface
     {
         $body = [
