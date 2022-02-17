@@ -6,10 +6,18 @@
          executionOrder="depends,defects"
          convertDeprecationsToExceptions="true"
          failOnRisky="true"
+         colors="true"
+         stopOnFailure="false"
          failOnWarning="true">
     <testsuites>
         <testsuite name="default">
             <directory>tests</directory>
+        </testsuite>
+        <testsuite name="invoices">
+            <directory>tests/Invoices</directory>
+        </testsuite>
+        <testsuite name="payments">
+            <directory>tests/Payments</directory>
         </testsuite>
     </testsuites>
 
