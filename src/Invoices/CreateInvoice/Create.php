@@ -5,7 +5,6 @@ namespace Samfelgar\FinnetClient\Invoices\CreateInvoice;
 use GuzzleHttp\Client;
 use GuzzleHttp\Exception\ClientException;
 use Samfelgar\FinnetClient\Exceptions\InvoiceException;
-use Samfelgar\FinnetClient\Exceptions\PaymentException;
 
 class Create
 {
