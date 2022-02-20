@@ -7,7 +7,7 @@ use Spatie\DataTransferObject\DataTransferObject;
 class Payer extends DataTransferObject
 {
     public int $registrationType;
-    public ?string $registeredNumber;
+    public ?string $registrationNumber;
     public string $name;
     public string $address;
     public string $neighborhood;
@@ -20,7 +20,7 @@ class Payer extends DataTransferObject
     {
         $data = [
             'registration_type' => $this->registrationType,
-            'registered_number' => $this->registeredNumber ?? null,
+            'registration_number' => $this->registrationNumber ?? null,
             'name' => $this->name,
             'address' => $this->address,
             'neighborhood' => $this->neighborhood,

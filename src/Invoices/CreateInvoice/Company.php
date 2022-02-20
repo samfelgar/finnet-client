@@ -11,8 +11,8 @@ class Company extends DataTransferObject
     public string $bankBranchIdentifier;
     public int $bankAccount;
     public string $bankAccountIdentifier;
-    public int $bankAgreement;
-    public int $registeredNumber;
+    public string $bankAgreement;
+    public string $registeredNumber;
     public ?int $type;
     public ?string $name;
     public ?CompanyAddress $address;

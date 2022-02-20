@@ -11,6 +11,7 @@ class Invoice extends DataTransferObject
     public ?int $walletVariation;
     public ?int $bordereauNumber;
     public ?string $invoiceType;
+    //bank_wallet_type
     public int $bankWalletCode;
     public int $transactionCode;
     public ?string $yourNumber;
@@ -60,10 +61,10 @@ class Invoice extends DataTransferObject
     public ?string $dacBankBranchAccount;
     public ?int $titleBankIdentification;
     public ?int $titleFormOfRegistration;
-    public ?string $documentType;
+    public ?int $documentType;
     public int $bankSlipEmissionId;
     public string $bankSlipDeliveryId;
-    public ?int $billingDocumentNumber;
+    public ?string $billingDocumentNumber;
     public string $identifier;
     public ?string $dacDemandingBankBranch;
     public ?int $latePaymentInterestCode;
@@ -84,10 +85,10 @@ class Invoice extends DataTransferObject
     public ?int $contractNumber;
     public ?string $registrationType;
     public ?int $registrationNumber;
-    public ?string $drawerGuarantorRegistType;
-    public ?int $drawerGuarantorRegistNumber;
+    public ?int $drawerGuarantorRegistType;
+    public ?string $drawerGuarantorRegistNumber;
     public ?int $correspClearingBankCode;
-    public ?int $ourNumberAtCorrespBank;
+    public ?string $ourNumberAtCorrespBank;
     public ?int $discountCode2;
     public ?string $discountLimitDate2;
 
